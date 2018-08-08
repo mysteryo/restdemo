@@ -16,16 +16,19 @@ public class RestAPI {
 	
 	@RequestMapping(path="/students")
 	public Map<Integer, Student> getStudents() {
+		System.out.println("LOG: Get all");
 		return studentUtility.getMap();
 	}
 	
 	@RequestMapping(path="/students/{id}")
 	public Student getStudent(@PathVariable("id") int id) {
+		System.out.println("LOG: Get student "+id);
 		return studentUtility.getStudent(id);
 	}
 	
 	@RequestMapping(path="/students/random")
 	public Student getRandom() {
+		System.out.println("LOG: Get random");
 		return studentUtility.getStudent((int) (Math.random()*5+1));
 	}
 
