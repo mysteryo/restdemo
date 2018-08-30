@@ -7,16 +7,16 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 
 @SpringBootApplication
-public class DemorestApplication extends SpringBootServletInitializer {
+public class DemorestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemorestApplication.class, args);
 	}
 
-	@Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(DemorestApplication.class);
-    }
+//	@Override
+//    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+//        return application.sources(DemorestApplication.class);
+//    }
 	
 	
 	
